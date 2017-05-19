@@ -1,0 +1,301 @@
+@CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+*::selection {
+    background: #fff;
+    color: #222;
+}
+
+* {
+
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #eee;
+}
+
+h1,
+h2 {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+}
+
+.page-half-part {
+    padding: 0;
+}
+
+.part-left {
+    position: relative;
+    box-shadow: 0 0 5px black;
+    z-index: 1;
+}
+
+.part-left .site-logo {
+    margin: 0rem auto 4rem auto !important;
+    top: 1.5rem;
+    margin: 2rem auto;
+}
+
+.site-logo .fillup {
+    transition-duration: 0.5s;
+}
+
+.part-right {
+    color: #fff;
+    overflow: auto;
+    z-index: 0;
+}
+
+.part-right > .section {
+    background: #337AB7;
+    transition-duration: 0.8s;
+    z-index: 0;
+    opacity: 0;
+}
+
+.part-right > .section.active {
+    opacity: 1;
+}
+
+.part-right > .section > h1 {
+    margin-bottom: 5rem;
+}
+
+.main-navbar {
+    border: none;
+    background: transparent;
+}
+
+.main-navbar .navbar-header {
+    background: #fff;
+}
+
+.main-navbar .navbar-collapse {
+    padding: 0;
+}
+
+.main-nav {
+    background: #fff;
+}
+
+.main-nav li+li {
+    margin-top: 0px;
+}
+
+.main-nav li a {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    border-radius: 0px;
+    padding: 15px;
+    transition-duration: 0.3s;
+}
+
+.main-nav li.active a:hover {
+    text-indent: 0;
+}
+
+.main-nav li a:hover {
+    text-indent: 0.5rem;
+    color: #fff;
+}
+
+.download-bar {
+    margin-top: 8rem;
+}
+
+.cert-logo {
+    max-height: 6rem;
+}
+
+.github-logo {
+    max-height: 1.5rem;
+    margin-left: 1rem;
+    vertical-align: baseline;
+}
+
+#alert-chrome-only {
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+#alert-chrome-only.alert-info p {
+    margin-bottom: 0;
+}
+
+.project-link {
+    font-size: 1.3rem;
+    color: #fff !important;
+}
+
+#dl-skills dt,
+#dl-skills dd {
+    line-height: 3rem;
+}
+
+a.download-pdf {
+    color: #fff !important;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    padding: 0 0.5rem;
+}
+
+a.download-pdf:hover {
+    color: #ddd !important;
+    text-decoration: none;
+}
+
+a.download-pdf:active {
+    color: #ddd !important;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0px;
+    color: #555;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#p-profile p {
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.part-right .sect-1,
+.main-nav li a.sect-1:hover,
+.main-nav li.active a.sect-1,
+.site-logo .fillup.sect-1 {
+    background: #29618C;
+}
+
+.part-right .sect-2,
+.main-nav li a.sect-2:hover,
+.main-nav li.active a.sect-2,
+.site-logo .fillup.sect-2 {
+    background: #DA6634;
+}
+
+.part-right .sect-3,
+.main-nav li a.sect-3:hover,
+.main-nav li.active a.sect-3,
+.site-logo .fillup.sect-3 {
+    background: #249467;
+}
+
+.part-right .sect-4,
+.main-nav li a.sect-4:hover,
+.main-nav li.active a.sect-4,
+.site-logo .fillup.sect-4 {
+    background: #DA9334;
+}
+
+.part-right .sect-1 a {
+    color: #DA6634;
+}
+
+.part-right .sect-2 a {
+    color: #29618C;
+}
+
+.part-right .sect-3 a {
+    color: #DA9334;
+}
+
+.part-right .sect-4 a {
+    color: #249467;
+}
+
+.experience .media-heading,
+.project .media-heading{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 767px) {
+
+    .main-navbar .collapse.navbar-collapse .main-nav{
+        transition-duration: 0.8s;
+    }
+
+    .main-navbar .collapse.navbar-collapse.in .main-nav {
+        opacity: 0.6;
+    }
+
+    .main-nav li.active a {
+        box-shadow: #666 0px 3px 9px 0px inset;
+    }
+
+    .part-right {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        margin-top: 218px;
+    }
+
+    .part-right > .section {
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .part-right > .section.active {
+        z-index: 1;
+    }
+
+    .spinner {
+        position: absolute;
+        width: 100%;
+        margin: 2rem auto;
+        z-index: -2;
+    }
+
+} /* @media (max-width: 767px) */
+
+
+@media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+
+    .page-container {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .page-half-part {
+        height: 100%;
+    }
+
+    .part-right > .section {
+        position: absolute;
+        left: -2.5rem;
+        height: 100%;
+        width: 100%;
+        padding-right: 2.5rem;
+        box-sizing: content-box;
+    }
+
+    .part-right > .section.active {
+        left: 0;
+        padding-right: 0;
+    }
+
+    .spinner {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        top: 50%;
+        margin-top: -25px;
+    }
+
+    .main-nav li.active a {
+        margin-right: -6px;
+    }
+
+} /* @media (min-width: 768px) */

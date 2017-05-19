@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+.spinner {
+    margin: 100px auto;
+    width: 18rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #559CD9;
+    height: 100%;
+    width: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+    -webkit-animation: stretchdelay 1.5s infinite ease-in-out;
+    -moz-animation: stretchdelay 1.5s infinite ease-in-out;
+    -0-animation: stretchdelay 1.5s infinite ease-in-out;
+    animation: stretchdelay 2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 80%, 100% { -webkit-transform: scaleY(1.0) }  
+    40% { -webkit-transform: scaleY(2.5) }
+}
+
+@-moz-keyframes stretchdelay {
+    0%, 80%, 100% { -moz-transform: scaleY(1.0) }  
+    40% { -moz-transform: scaleY(2.5) }
+}
+
+@-o-keyframes stretchdelay {
+    0%, 80%, 100% { -o-transform: scaleY(1.0) }  
+    40% { -o-transform: scaleY(2.5) }
+}
